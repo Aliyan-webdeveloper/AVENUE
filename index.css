@@ -76,7 +76,7 @@ a {
   height: 65vh;
   background-size: 100%;
   background-repeat: no-repeat;
-  background-image: url(/images/photo.png);
+  background-image: url(images/photo.png);
   margin-bottom: 2%;
 }
 
