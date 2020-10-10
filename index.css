@@ -623,10 +623,10 @@ hr {
 .background {
   position: relative;
   background-image: url(images/photo3.png);
-  background-size: 100%;
+  background-size:cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 420px;
+  height: 418px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1037,8 +1037,6 @@ footer {
     width: 25%;
     padding-left: 15px;
   }
-  .carts-of{
-  }
   .carts-of button{
     padding: 18px 55px;
     margin: 40px 10px;
@@ -1058,13 +1056,13 @@ footer {
   background-color: #f8f8f8;
 }
 .tabContainer .buttonContainer button{
-  width: 15%;
+  width:unset;
   height: 100%;
   float: left;
   border: none;
   outline:none;
   cursor: pointer;
-  padding: 10px;
+  padding: 10px 20px;
   font-family: sans-serif;
   font-size: 18px;
   background-color: #f8f8f8;
@@ -1168,6 +1166,83 @@ footer {
   flex-direction: row;
 
 }
+/* ----------------------------------- */
+/* THIS IS THE SIGN UP PAGE CSS  */
+/* ----------------------------------- */
+.sign-up{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 45px;
+}
+.left-sign-up{
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+}
+.sign-form{
+  display: flex;
+  flex-direction: column;
+}
+.left-sign-up input{
+  padding: 15px 5px;
+  margin-bottom: 30px;
+}
+.forgot-pass{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.forgot-pass button{
+  padding: 20px 40px;
+  letter-spacing: 3px;
+}
+.forgot-pass button:hover{
+  color: white;
+  background-color: #00FFFF;
+  border: 2px solid #00FFFF;
+}
+.forgot-pass a{
+  text-decoration: none;
+  color: #00FFFF;
+}
+.register-page{
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+}
+.regis-form{
+  display: flex;
+  flex-direction: column;
+}
+.regis-form input{
+  padding: 15px 5px;
+  margin-bottom: 30px;
+}
+.checkbox{
+  display: flex;
+  flex-direction: row;
+}
+
+.create-btn{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.create-btn button{
+  padding: 10px 40px;
+  letter-spacing: 3px;
+  background-color: transparent;
+  font-size: 17px;
+}
+.create-btn a{
+  text-decoration: none;
+  color: #00FFFF;
+}
 
 @media only screen and (max-width: 1199px) {
   .rightofheader a {
@@ -1261,6 +1336,14 @@ footer {
   .progress {
     width: 60%;
   }
+  .sign-up {
+    width: 95%;
+  }
+  .create-btn button {
+    font-size: 12px;
+  }
+
+
 }
 @media only screen and (max-width: 991px) {
   body {
@@ -1321,8 +1404,8 @@ footer {
   .close-btn span {
     position: absolute;
     cursor: pointer;
-    color: #fff;
-    border: 1px solid #fff;
+    color: black;
+    border: 1px solid black;
     padding: 5px;
     border-radius: 50%;
     width: 30px;
@@ -1350,20 +1433,22 @@ footer {
   #right-nav {
     width: 300px;
     display: block;
-    background-color: gray;
+    background-color:rgb(253, 253, 253);
+    box-shadow: 0px 0px 12px 0px rgb(161, 159, 159);
     position: fixed;
     left: -300px;
     z-index: 1;
-    top: 23px;
+    top: 0px;
     height: 100vh;
     transition: 0.5s;
     padding-top: 40px;
     padding-left: 10px;
-    left: 0px;
+    left: -300px;
   }
   .mens a {
     display: flex;
     justify-content: space-between;
+    
   }
 
   .right li a {
@@ -1615,6 +1700,19 @@ footer {
     padding: 10px 9px;
 
   }
+  .sign-up {
+    width: 100%;
+    padding: 0px 34px;
+    flex-direction: column;
+
+  }
+  .left-sign-up {
+    width: 100%;
+  }
+  .register-page {
+    width: 100%;
+  }
+
 
 
 
@@ -1676,6 +1774,7 @@ footer {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding-left: unset;
   }
   .info {
     width: 90%;
@@ -1799,6 +1898,17 @@ footer {
     display: inline-flex;
     white-space: nowrap;
   }
+  .forgot-pass button {
+    padding: 10px 13px;
+  }
+  .create-btn {
+    flex-direction: column;
+  }
 
+  .create-btn button{
+    padding: 15px 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 
 }

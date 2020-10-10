@@ -1,334 +1,379 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Singn-Up</title>
     <link rel="stylesheet" href="index.css" />
     <script src="https://kit.fontawesome.com/bb3d29d313.js"></script>
-</head>
-<body>
-     <!-- THIS IS THE HEADER DIV THE TOP ONE -->
+  </head>
+  <body>
+    <!-- THIS IS THE HEADER DIV THE TOP ONE -->
 
-     <div class="header">
-        <div class="currency">
-          <select name="" id="">
-            <option value="">Currency : GBP</option>
-            <option value="">PKR</option>
-            <option value="">POUND</option>
-            <option value="">DOLLAR</option>
-          </select>
+    <div class="header">
+      <div class="currency">
+        <select name="" id="">
+          <option value="">Currency : GBP</option>
+          <option value="">PKR</option>
+          <option value="">POUND</option>
+          <option value="">DOLLAR</option>
+        </select>
+      </div>
+      <div class="rightofheader">
+        <a class="register" href="">Register</a>
+        <a class="signin" href="signup.html">Sing In</a>
+        <a class="empty" href="product-view.html"
+          ><span><i class="fas fa-shopping-cart"></i></span>empty</a
+        >
+      </div>
+    </div>
+    <!-- THI IS THE CONTAINER AFTER THE HEADER DIV -->
+    <div class="container">
+      <nav class="navbar">
+        <button id="manue" onclick="openNav()">
+          <span class="bar"><i class="fas fa-bars"></i></span>
+        </button>
+        <div class="left">
+          <h1><a href="index.html"> AVENUE FASHION</a></h1>
         </div>
-        <div class="rightofheader">
-          <a class="register" href="">Register</a>
-          <a class="signin" href="signup.html">Sing In</a>
-          <a class="empty" href="product-view.html"
-            ><span><i class="fas fa-shopping-cart"></i></span>empty</a
+        <div class="right">
+          <ul id="right-nav">
+            <li class="close-btn">
+              <span onclick="closeNav()"><i class="fas fa-times"></i></span>
+            </li>
+            <li class="mens">
+              <a href=""
+                >MENS <span><i class="fas fa-chevron-down"></i></span
+              ></a>
+
+              <div class="hover-box">
+                <div class="hover-area">
+                  <div class="hover-items">
+                    <div class="upper-box">
+                      <div class="casuals">
+                        <ul>
+                          <li>
+                            <h2>CASIALS</h2>
+                          </li>
+                          <li>
+                            <a href="">Jackets</a>
+                          </li>
+                          <li>
+                            <a href="">Hoodies & Sweatshirts</a>
+                          </li>
+                          <li>
+                            <a href="">Poto Shirts</a>
+                          </li>
+                          <li>
+                            <a href="">Sportswear</a>
+                          </li>
+                          <li>
+                            <a href="">Thousers & Chinos</a>
+                          </li>
+                          <li>
+                            <a href="">T-Shirts</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="formal">
+                        <ul>
+                          <li>
+                            <h2>FORMAL</h2>
+                          </li>
+                          <li>
+                            <a href="">Jackets</a>
+                          </li>
+                          <li>
+                            <a href="">Shirts</a>
+                          </li>
+                          <li>
+                            <a href="">Suits</a>
+                          </li>
+                          <li>
+                            <a href="">Trousers</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="lower-box">
+                      <div class="sale">
+                        <h1>AUTUMN SALE!</h1>
+                        <h3>UP TO 50% OFF</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="women">
+              <a href=""
+                >WOMEN <span><i class="fas fa-chevron-down"></i></span
+              ></a>
+              <div class="hover-box">
+                <div class="hover-area">
+                  <div class="hover-items">
+                    <div class="upper-box">
+                      <div class="casuals">
+                        <ul>
+                          <li>
+                            <h2>CASIALS</h2>
+                          </li>
+                          <li>
+                            <a href="">Jackets</a>
+                          </li>
+                          <li>
+                            <a href="">Hoodies & Sweatshirts</a>
+                          </li>
+                          <li>
+                            <a href="">Poto Shirts</a>
+                          </li>
+                          <li>
+                            <a href="">Sportswear</a>
+                          </li>
+                          <li>
+                            <a href="">Thousers & Chinos</a>
+                          </li>
+                          <li>
+                            <a href="">T-Shirts</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="formal">
+                        <ul>
+                          <li>
+                            <h2>FORMAL</h2>
+                          </li>
+                          <li>
+                            <a href="">Jackets</a>
+                          </li>
+                          <li>
+                            <a href="">Shirts</a>
+                          </li>
+                          <li>
+                            <a href="">Suits</a>
+                          </li>
+                          <li>
+                            <a href="">Trousers</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="lower-box">
+                      <div class="sale">
+                        <h1>AUTUMN SALE!</h1>
+                        <h3>UP TO 50% OFF</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li><a href="The-brand.html">THE BRAND</a></li>
+            <li>
+              <a href="local-store.html"> LOCAL STORES </a>
+            </li>
+            <li class="look-book">
+              <a href=""
+                >LOOK BOOK <span><i class="fas fa-chevron-down"></i></span
+              ></a>
+
+              <div class="hover-box2">
+                <div class="hover-area">
+                  <div class="hover-items">
+                    <div class="upper-box">
+                      <div class="casuals">
+                        <ul>
+                          <li>
+                            <h2>OUR LOOKBOOKS</h2>
+                          </li>
+                          <li>
+                            <a href="look-book.html">Latest Posts (mixed) </a>
+                          </li>
+                          <li>
+                            <a href="">Men's Lookbook</a>
+                          </li>
+                          <li>
+                            <a href="">Women's Lookbook</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="formal">
+                        <ul>
+                          <li>
+                            <h2>YOUR LOOKBOOK</h2>
+                          </li>
+                          <li>
+                            <a href="">View and Edit</a>
+                          </li>
+                          <li>
+                            <a href="">Share</a>
+                          </li>
+                          <li>
+                            <a href="">Delete</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="lower-box">
+                      <div class="sale">
+                        <h1>AUTUMN SALE!</h1>
+                        <h3>UP TO 50% OFF</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="search">
+            <input type="text" placeholder="Search" />
+            <span><i class="fas fa-search"></i></span>
+          </div>
+        </div>
+      </nav>
+      <div class="background">
+        <div class="thebrand">
+          <h2><b>WELCOME</b> TO AVE</h2>
+          <p>SIGN IN OR REGISTER</p>
+        </div>
+      </div>
+    </div>
+    <!-- --------------------------------->
+    <!-- THIS IS THE SIGN UP AREA  -->
+    <!-- ----------------------------------------->
+    <div class="sign-up">
+      <div class="left-sign-up">
+        <h2>SIGN IN</h2>
+        <form class="sign-form" action="">
+        <input type="text" placeholder="Your Email.." required />
+        <input type="password" placeholder="Your password" required />
+        <div class="forgot-pass">
+          <button>SIGN IN</button>
+          <p>
+            <a href="">
+              Forgot your Password
+              <span><i class="fas fa-long-arrow-alt-right"></i></span
+            ></a>
+          </p>
+        </form>
+        </div>
+      </div>
+      <!-- thi si the register sec -->
+      <div class="register-page">
+        <h2>REGISTER</h2>
+        <form class="regis-form" action="">
+        <input type="text" placeholder="Your Email.." required />
+        <input type="password" placeholder="Your Password"  required/>
+        <input type="password" placeholder="Confirm Password" required/>
+        <div class="checkbox">
+          <input type="checkbox" />
+          <label for=""
+            >Sign up for exclusive updates,discounts,new,contents,and
+            more!</label
           >
         </div>
-      </div>
-      <!-- THI IS THE CONTAINER AFTER THE HEADER DIV -->
-      <div class="container">
-        <nav class="navbar">
-          <button id="manue" onclick="openNav()">
-            <span class="bar"><i class="fas fa-bars"></i></span>
-          </button>
-          <div class="left">
-            <h1><a href="index.html"> AVENUE FASHION</a></h1>
-          </div>
-          <div class="right">
-            <ul id="right-nav">
-              <li class="close-btn">
-                <span onclick="closeNav()"><i class="fas fa-times"></i></span>
-              </li>
-              <li class="mens">
-                <a href=""
-                  >MENS <span><i class="fas fa-chevron-down"></i></span
-                ></a>
-  
-                <div class="hover-box">
-                  <div class="hover-area">
-                    <div class="hover-items">
-                      <div class="upper-box">
-                        <div class="casuals">
-                          <ul>
-                            <li>
-                              <h2>CASIALS</h2>
-                            </li>
-                            <li>
-                              <a href="">Jackets</a>
-                            </li>
-                            <li>
-                              <a href="">Hoodies & Sweatshirts</a>
-                            </li>
-                            <li>
-                              <a href="">Poto Shirts</a>
-                            </li>
-                            <li>
-                              <a href="">Sportswear</a>
-                            </li>
-                            <li>
-                              <a href="">Thousers & Chinos</a>
-                            </li>
-                            <li>
-                              <a href="">T-Shirts</a>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="formal">
-                          <ul>
-                            <li>
-                              <h2>FORMAL</h2>
-                            </li>
-                            <li>
-                              <a href="">Jackets</a>
-                            </li>
-                            <li>
-                              <a href="">Shirts</a>
-                            </li>
-                            <li>
-                              <a href="">Suits</a>
-                            </li>
-                            <li>
-                              <a href="">Trousers</a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="lower-box">
-                        <div class="sale">
-                          <h1>AUTUMN SALE!</h1>
-                          <h3>UP TO 50% OFF</h3>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="women">
-                <a href=""
-                  >WOMEN <span><i class="fas fa-chevron-down"></i></span
-                ></a>
-                <div class="hover-box">
-                  <div class="hover-area">
-                    <div class="hover-items">
-                      <div class="upper-box">
-                        <div class="casuals">
-                          <ul>
-                            <li>
-                              <h2>CASIALS</h2>
-                            </li>
-                            <li>
-                              <a href="">Jackets</a>
-                            </li>
-                            <li>
-                              <a href="">Hoodies & Sweatshirts</a>
-                            </li>
-                            <li>
-                              <a href="">Poto Shirts</a>
-                            </li>
-                            <li>
-                              <a href="">Sportswear</a>
-                            </li>
-                            <li>
-                              <a href="">Thousers & Chinos</a>
-                            </li>
-                            <li>
-                              <a href="">T-Shirts</a>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="formal">
-                          <ul>
-                            <li>
-                              <h2>FORMAL</h2>
-                            </li>
-                            <li>
-                              <a href="">Jackets</a>
-                            </li>
-                            <li>
-                              <a href="">Shirts</a>
-                            </li>
-                            <li>
-                              <a href="">Suits</a>
-                            </li>
-                            <li>
-                              <a href="">Trousers</a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="lower-box">
-                        <div class="sale">
-                          <h1>AUTUMN SALE!</h1>
-                          <h3>UP TO 50% OFF</h3>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-  
-              <li><a href="The-brand.html">THE BRAND</a></li>
-              <li>
-                <a href="local-store.html"> LOCAL STORES </a>
-              </li>
-              <li class="look-book">
-                <a href=""
-                  >LOOK BOOK <span><i class="fas fa-chevron-down"></i></span
-                ></a>
-  
-                <div class="hover-box2">
-                  <div class="hover-area">
-                    <div class="hover-items">
-                      <div class="upper-box">
-                        <div class="casuals">
-                          <ul>
-                            <li>
-                              <h2>OUR LOOKBOOKS</h2>
-                            </li>
-                            <li>
-                              <a href="look-book.html">Latest Posts (mixed) </a>
-                            </li>
-                            <li>
-                              <a href="">Men's Lookbook</a>
-                            </li>
-                            <li>
-                              <a href="">Women's Lookbook</a>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="formal">
-                          <ul>
-                            <li>
-                              <h2>YOUR LOOKBOOK</h2>
-                            </li>
-                            <li>
-                              <a href="">View and Edit</a>
-                            </li>
-                            <li>
-                              <a href="">Share</a>
-                            </li>
-                            <li>
-                              <a href="">Delete</a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="lower-box">
-                        <div class="sale">
-                          <h1>AUTUMN SALE!</h1>
-                          <h3>UP TO 50% OFF</h3>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </ul>
-            <div class="search">
-              <input type="text" placeholder="Search" />
-              <span><i class="fas fa-search"></i></span>
-            </div>
-          </div>
-        </nav>
-        <div class="background">
-          <div class="thebrand">
-            <h2><b>WELCOME</b> TO AVE</h2>
-            <p>
-              SIGN IN OR REGISTER
-            </p>
-          </div>
+        <div class="create-btn">
+          <button>CREATE ACCOUNT</button>
+          <p>
+            By clicking 'Create Account',you agree to our
+            <a href=""
+              >Privacy policy<span
+                ><i class="fas fa-long-arrow-alt-right"></i></span
+            ></a>
+          </p>
         </div>
+        </form>
       </div>
-       <!-- THI IS THE FOOTER AREA -->
+    </div>
+    <!-- THI IS THE FOOTER AREA -->
     <footer>
-        <div class="outer-box">
-          <div class="inside-box1">
-            <div class="info">
-              <h5>INFORMATION</h5>
-              <li><a href="">The brand</a></li>
-              <li><a href="">Local stores</a></li>
-              <li><a href="">Customer service</a></li>
-              <li><a href="">Privacy & cookies</a></li>
-              <li><a href="">Site map</a></li>
-            </div>
-            <div class="info">
-              <h5>WHY BUY FROM US</h5>
-              <li><a href="">Shipping & returns</a></li>
-              <li><a href="">Secure shopping</a></li>
-              <li><a href="">Testimonials</a></li>
-              <li><a href="">Award winning</a></li>
-              <li><a href="">Ethical trading</a></li>
-            </div>
-            <div class="info">
-              <h5>YOUR ACCOUNT</h5>
-              <li><a href="">Sign in</a></li>
-              <li><a href="">Register</a></li>
-              <li><a href="">View cart</a></li>
-              <li><a href="">View your lookbook</a></li>
-              <li><a href="">Track an order</a></li>
-              <li><a href="">Update information</a></li>
-            </div>
-            <div class="info">
-              <h5>LOOKBOOK</h5>
-              <li><a href="">Latest posts</a></li>
-              <li><a href="">Men's lookbook</a></li>
-              <li><a href="">Women's lookbook</a></li>
-              <li><a href="">Lookbook RSS feed</a></li>
-              <li><a href="">View your lookbook</a></li>
-              <li><a href="">Delete your lookbook</a></li>
-            </div>
-            <div class="info">
-              <h5>CONTACT DETAILS</h5>
-              <p>Head Office:Avenue Fashion.180-182 Regent Street,LONDON</p>
-  
-              <p><b>Telephone:</b> <a href="">03120052997</a></p>
-              <p><b>Email:</b><a href="">fullduplex.com</a></p>
-            </div>
+      <div class="outer-box">
+        <div class="inside-box1">
+          <div class="info">
+            <h5>INFORMATION</h5>
+            <li><a href="">The brand</a></li>
+            <li><a href="">Local stores</a></li>
+            <li><a href="">Customer service</a></li>
+            <li><a href="">Privacy & cookies</a></li>
+            <li><a href="">Site map</a></li>
           </div>
-          <div class="inside-box2">
-            <div class="award">
-              <h2>AWARD WINNER</h2>
-              <h5>FASHION AWARDS 2020</h5>
-            </div>
-            <div class="award2">
-              <a href=""
-                ><span><i class="fab fa-facebook-f"></i></span
-              ></a>
-              <a href=""
-                ><span><i class="fab fa-twitter"></i></span
-              ></a>
-              <a href=""
-                ><span><i class="fab fa-instagram"></i></span
-              ></a>
-              <a href=""
-                ><span><i class="fab fa-pinterest"></i></span
-              ></a>
-            </div>
+          <div class="info">
+            <h5>WHY BUY FROM US</h5>
+            <li><a href="">Shipping & returns</a></li>
+            <li><a href="">Secure shopping</a></li>
+            <li><a href="">Testimonials</a></li>
+            <li><a href="">Award winning</a></li>
+            <li><a href="">Ethical trading</a></li>
+          </div>
+          <div class="info">
+            <h5>YOUR ACCOUNT</h5>
+            <li><a href="">Sign in</a></li>
+            <li><a href="">Register</a></li>
+            <li><a href="">View cart</a></li>
+            <li><a href="">View your lookbook</a></li>
+            <li><a href="">Track an order</a></li>
+            <li><a href="">Update information</a></li>
+          </div>
+          <div class="info">
+            <h5>LOOKBOOK</h5>
+            <li><a href="">Latest posts</a></li>
+            <li><a href="">Men's lookbook</a></li>
+            <li><a href="">Women's lookbook</a></li>
+            <li><a href="">Lookbook RSS feed</a></li>
+            <li><a href="">View your lookbook</a></li>
+            <li><a href="">Delete your lookbook</a></li>
+          </div>
+          <div class="info">
+            <h5>CONTACT DETAILS</h5>
+            <p>Head Office:Avenue Fashion.180-182 Regent Street,LONDON</p>
+
+            <p><b>Telephone:</b> <a href="">03120052997</a></p>
+            <p><b>Email:</b><a href="">fullduplex.com</a></p>
           </div>
         </div>
-        <dic class="copy-right">
-          <p>© 2020 Avenue Fashion <sup>TM</sup></p>
-          <div class="right-sidefooer">
-            <p>Design by M.Aliyan</p>
-            <p>
-              BY
-              <a href="https://www.fullduplex.co.uk/" target="_blank"
-                >fullduplex.co.uk</a
-              >
-            </p>
+        <div class="inside-box2">
+          <div class="award">
+            <h2>AWARD WINNER</h2>
+            <h5>FASHION AWARDS 2020</h5>
           </div>
-        </dic>
-      </footer>
-     <script>
-         function openNav() {
-    document.getElementById("right-nav").style.left = "0px";
-  }
-  
-  function closeNav() {
-    document.getElementById("right-nav").style.left = "-300px";
-  }
-     </script>
-</body>
+          <div class="award2">
+            <a href=""
+              ><span><i class="fab fa-facebook-f"></i></span
+            ></a>
+            <a href=""
+              ><span><i class="fab fa-twitter"></i></span
+            ></a>
+            <a href=""
+              ><span><i class="fab fa-instagram"></i></span
+            ></a>
+            <a href=""
+              ><span><i class="fab fa-pinterest"></i></span
+            ></a>
+          </div>
+        </div>
+      </div>
+      <dic class="copy-right">
+        <p>© 2020 Avenue Fashion <sup>TM</sup></p>
+        <div class="right-sidefooer">
+          <p>Design by M.Aliyan</p>
+          <p>
+            BY
+            <a href="https://www.fullduplex.co.uk/" target="_blank"
+              >fullduplex.co.uk</a
+            >
+          </p>
+        </div>
+      </dic>
+    </footer>
+    <script>
+      function openNav() {
+        document.getElementById("right-nav").style.left = "0px";
+      }
+
+      function closeNav() {
+        document.getElementById("right-nav").style.left = "-300px";
+      }
+    </script>
+  </body>
 </html>
