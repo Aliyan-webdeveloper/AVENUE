@@ -944,6 +944,230 @@ footer {
 .win-des2 p {
   color: #8e8c8c;
 }
+/* -----------------------------------  */
+/* THIS IS THE PRODUCT VIEW SECTION  */
+/* ------------------------------------ */
+.product-view {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 30px;
+}
+.inner-product-view{
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+  .left-photo{
+    width: 44%;
+  }
+  .left-photo img{
+    width: 100%;
+  }
+  .right-product-view{
+    width: 54%;
+  }
+  .right-product-view h2{
+    color:#837f80 ;
+  }
+  .right-product-view h3{
+    color: #727272;
+  }
+  .right-product-view h3 a{
+    text-decoration: none;
+    color:#727272 ;
+  }
+  .right-product-view h3 a:hover{
+    color: #00c8c8;
+  }
+  .right-product-view .share-icons span i{
+    color:#727272;
+  }
+  .right-product-view .share-icons span i:hover{
+    color: #00c8c8;
+  }
+  .right-product-view h3 span i{
+    color: #e0d6b0;
+    margin: 0px 3px;
+  }
+  .right-product-view h3 span .fourth-star{
+    color: #dfdfde;
+  }
+  .priceof{
+    color: #9a9a9a;
+    font-size: 20px;
+    letter-spacing: 3px;
+  }
+  .stock{
+    color: #8c8c8c;
+  }
+  .stock a{
+    text-decoration: none;
+    color: #00c8c8;
+  }
+  .right-product-view p{
+    color: #8c8c8c;
+  }
+  .right-product-view ul li{
+    color: #8c8c8c;
+    
+  }
+  .right-product-view ul{
+    padding: 0px ;
+    padding-left: 15px;
+  }
+  .color-selector{
+    display: flex;
+    flex-direction: row;
+  }
+  .select-col{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 10px;
+    margin-bottom: 20px;
+  }
+  .select-col select{
+    padding: 10px 0px;
+    padding-right: 70px;
+    padding-left: 5px;
+  }
+  .select-col2 input{
+    padding: 10px 0px;
+    width: 25%;
+    padding-left: 15px;
+  }
+  .carts-of{
+  }
+  .carts-of button{
+    padding: 18px 55px;
+    margin: 40px 10px;
+    background-color: transparent;
+    border: 2px solid #737373;
+  }
+  .carts-of button:hover{
+    color: white;
+    background-color: #333333;
+  }
+/* thi is tje css of tab  */
+.tabContainer{
+ width: 100%;
+}
+.tabContainer .buttonContainer{
+ display: flex;
+  background-color: #f8f8f8;
+}
+.tabContainer .buttonContainer button{
+  width: 15%;
+  height: 100%;
+  float: left;
+  border: none;
+  outline:none;
+  cursor: pointer;
+  padding: 10px;
+  font-family: sans-serif;
+  font-size: 18px;
+  background-color: #f8f8f8;
+  color: #575153;
+}
+.tabContainer .buttonContainer button:hover{
+  background-color: #333333;
+  
+  color: white;
+}
+.tabContainer .tabPanel{
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 15px;
+  display: none;
+}
+.progress{
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  margin: auto;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.inner-progress{
+  width: 49%;
+}
+.pro-stars{
+  width: 49%;
+}
+.pro-stars span i{
+  color: rgb(235, 18, 36);
+}
+.tabPane h3{
+  color:#727272 ;
+}
+.tabPane p{
+  color: #b8b7b7;
+}
+.colors button{
+  padding: 10px 20px;
+}
+.color1{background-color: black;
+  color:white;
+}
+.color2{background-color: darkblue;
+  color:white;
+}
+.color3{background-color:darkgreen;
+  color:white;
+}
+.color4{background-color: white;}
+.color5{background-color: red;
+  color:white;
+}
+.color6{background-color: gray;
+  color:white;
+}
+.color7{background-color:pink;
+  
+}
+.color8{background-color: green;
+  color:white;
+}
+.color9{background-color: #00FFFF;
+  
+}
+.color10{background-color: brown;
+  color:white;
+}
+.color11{
+ background-color: yellow;
+   
+}
+.size-of button{
+   padding: 10px 20px;
+}
+.shipping-con{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.days{
+  display: flex;
+  flex-direction: row;
+  margin-right: 20px;
+  margin-top: 30px;
+}
+.days h3{
+  margin: 0px;
+}
+.days span i{
+  margin-right: 5px;
+}
+.inner-shipping{
+  display: flex;
+  flex-direction: row;
+
+}
 
 @media only screen and (max-width: 1199px) {
   .rightofheader a {
@@ -984,42 +1208,59 @@ footer {
   .pakistan {
     width: 60%;
   }
-  .win-des h1{
-      font-size: 17px;
-  }
-  .win-des h3{
-      font-size: 12px;
-  }
-  .win-des p{
-      font-size: 12px;
-  }
-  .win-des2 h1{
+  .win-des h1 {
     font-size: 17px;
-}
-.win-des2 h3{
+  }
+  .win-des h3 {
     font-size: 12px;
-}
-.win-des2 p{
+  }
+  .win-des p {
     font-size: 12px;
-}
-.view-dtl{
+  }
+  .win-des2 h1 {
+    font-size: 17px;
+  }
+  .win-des2 h3 {
+    font-size: 12px;
+  }
+  .win-des2 p {
+    font-size: 12px;
+  }
+  .view-dtl {
     margin-top: 10px;
     margin-bottom: 10px;
-}
-.hover-heart3 {
+  }
+  .hover-heart3 {
     top: 102px;
     right: 276px;
-}
-.hover-heart2 {
+  }
+  .hover-heart2 {
     top: 99px;
     right: 181px;
-}
-.hover-heart {
+  }
+  .hover-heart {
     top: 109px;
     right: 55px;
-}
+  }
+  .thebrand h2 {
+    font-size: 22px;
 
+  }
+  .thebrand p {
+    font-size: 16px;
 
+  }
+  .carts-of button {
+    padding: 18px 30px;
+    margin: 12px 4px;
+  }
+  .tabContainer .buttonContainer button {
+    margin-right: 5px;
+    width: unset;
+  }
+  .progress {
+    width: 60%;
+  }
 }
 @media only screen and (max-width: 991px) {
   body {
@@ -1161,67 +1402,82 @@ footer {
     font-size: 10px;
   }
   .first-row {
-      flex-wrap: wrap;
-      justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
-  .box1{
-      margin: 0px;
-      width: 48%;
-      margin-bottom: 15px;
-  }
-  .box2{
+  .box1 {
     margin: 0px;
-    margin-bottom: 15px;
     width: 48%;
-}
- .box3{
-      margin: 0px;
-      width: 100%;
-      margin-bottom: 15px;
+    margin-bottom: 15px;
   }
-  .second-row{
-      flex-wrap: wrap;
-      justify-content: space-between;
-  }
-  .box4{
+  .box2 {
     margin: 0px;
     margin-bottom: 15px;
     width: 48%;
   }
-  .box5{
+  .box3 {
+    margin: 0px;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .second-row {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .box4 {
     margin: 0px;
     margin-bottom: 15px;
     width: 48%;
   }
-  .box6{
+  .box5 {
     margin: 0px;
     margin-bottom: 15px;
     width: 48%;
   }
-  .box7{
+  .box6 {
     margin: 0px;
     margin-bottom: 15px;
     width: 48%;
   }
-  .third-row{
-      flex-wrap: wrap;
-      justify-content: space-between;
+  .box7 {
+    margin: 0px;
+    margin-bottom: 15px;
+    width: 48%;
   }
-  .box8{
+  .third-row {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .box8 {
     margin: 0px;
     margin-bottom: 15px;
     width: 100%;
     height: 399px;
   }
-  .box8 img{
-      object-fit: cover;
+  .box8 img {
+    object-fit: cover;
   }
-  .box9{
+  .box9 {
     margin: 0px;
     margin-bottom: 15px;
     width: 48%;
   }
+  .thebrand p {
+    letter-spacing: unset;
+  }
 
+  .carts-of button{
+    padding: 18px 22px;
+
+  }
+  .tabContainer .buttonContainer button {
+    font-size: 14px;
+    margin-right: unset;
+  }
+  .progress {
+    width: 80%;
+
+  }
 
 
 }
@@ -1347,6 +1603,21 @@ footer {
     margin: 0px 10px;
     font-size: 10px;
   }
+  .inner-product-view {
+    flex-direction: column;
+  }
+  .right-product-view {
+    
+    width: 100%;
+  }
+  .tabContainer .buttonContainer button {
+    font-size: 13px;
+    padding: 10px 9px;
+
+  }
+
+
+
 }
 @media only screen and (max-width: 575px) {
   .header {
@@ -1476,46 +1747,58 @@ footer {
   .pakistan {
     width: 100%;
   }
-  .first-row{
-      flex-direction: column;
+  .first-row {
+    flex-direction: column;
   }
-  .second-row{
-      flex-direction: column;
+  .second-row {
+    flex-direction: column;
   }
-  .win-des2{
-      position: relative;
-      left: unset;
-      top: unset;
+  .win-des2 {
+    position: relative;
+    left: unset;
+    top: unset;
   }
-.box8 {
+  .box8 {
     height: 100%;
-    
-}
-.win-des {
+  }
+  .win-des {
     position: unset;
-}
-.box1{
+  }
+  .box1 {
     width: 100%;
-}
-.box2{
+  }
+  .box2 {
     width: 100%;
-}
-.box4{
+  }
+  .box4 {
     width: 100%;
-}
-.box5{
+  }
+  .box5 {
     width: 100%;
-}
-.box6{
+  }
+  .box6 {
     width: 100%;
-}
-.box7{
+  }
+  .box7 {
     width: 100%;
-}
-.box9{
+  }
+  .box9 {
     width: 100%;
-}
-
+  }
+  .select-col select {
+    padding: 8px 0px;
+    padding-right: 44px;
+  }
+  .color-selector{
+    flex-direction: column;
+  }
+  .tabContainer .buttonContainer{
+    overflow-x: scroll;
+  }
+  .tabContainer .buttonContainer button {
+    display: inline-flex;
+    white-space: nowrap;
+  }
 
 
 }
