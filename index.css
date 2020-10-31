@@ -31,7 +31,7 @@ button {
 a {
   cursor: pointer;
 }
-/* TJIS IS THE HEADER  THE TOP ONE  */
+/* ThIS IS THE HEADER  THE TOP ONE  */
 
 .header {
   background-color: #333333;
@@ -829,7 +829,7 @@ footer {
   z-index: 1;
 }
 
-.hover-heart2 {
+ .hover-heart2 {
   position: absolute;
   top: 250px;
   right: 400px;
@@ -838,8 +838,8 @@ footer {
   display: none;
   cursor: pointer;
   z-index: 1;
-}
-.hover-heart3 {
+} 
+ .hover-heart3 {
   position: absolute;
   top: 250px;
   right: 600px;
@@ -848,7 +848,7 @@ footer {
   display: none;
   cursor: pointer;
   z-index: 1;
-}
+} 
 
 .box img {
   width: 100%;
@@ -1799,6 +1799,7 @@ footer {
   }
   .popular-nav ul {
     overflow-x: scroll;
+   
   }
   .popular-nav ::-webkit-scrollbar {
     width: 4px;
@@ -1825,7 +1826,7 @@ footer {
     width: calc(100% - 20px);
   }
   .background {
-    height: 72px;
+    height: 210px;
   }
   .thebrand p {
     font-size: 12px;
@@ -1858,12 +1859,16 @@ footer {
     position: relative;
     left: unset;
     top: unset;
+    text-align: center;
+    margin: auto;
   }
   .box8 {
     height: 100%;
   }
   .win-des {
     position: unset;
+    text-align: center;
+    margin: auto;
   }
   .box1 {
     width: 100%;
@@ -1911,6 +1916,48 @@ footer {
     padding: 15px 40px;
     margin-top: 10px;
     margin-bottom: 10px;
+  }
+  
+  .latest-inner ul {
+    overflow-x: scroll;
+    list-style: none;
+    display: flex;
+  }
+  .latest-inner ::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+
+  .latest-inner ::-webkit-scrollbar-thumb {
+    background: #727272;
+    border-radius: 10px;
+  }
+  .latest-inner ul li a {
+    border: 2px solid #727272;
+
+    white-space: nowrap;
+    margin: 20px 29px;
+    display: inline-flex;
+    padding: 12px 15px;
+  }
+  .latest-inner ul li a:hover {
+    background-color: #777777;
+    color: white;
+  }
+  .hover-heart{
+    top: 134px;
+    right: 88px;
+
+  }
+  .hover-heart2{
+    top: 54px;
+    right: 95px;
+  }
+  .hover-heart span i{
+    background: black;
+  }
+  .hover-heart2 span i{
+    background:black; 
   }
 
 }
