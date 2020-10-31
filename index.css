@@ -788,6 +788,10 @@ footer {
   color: #8e8e8e;
   margin: 0px 15px;
 }
+.latest-inner ul{
+  list-style: none;
+  display: flex;
+}
 .latest-inner a:hover {
   color: #00c8c8;
 }
@@ -1958,6 +1962,12 @@ footer {
   }
   .hover-heart2 span i{
     background:black; 
+  }
+  .hover-heart3{
+    font-size: 30px;
+    top: 32px;
+    right: 109px;
+    background-color: black;
   }
 
 }
